@@ -1,6 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1365.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aliexpress_clone.Aliexpress_controller">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@../../../../java/values/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="110.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="175.0" text="Aliexpress" textFill="#2f2d2d">
+                           <font>
+                              <Font name="Cambria Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="Clone" textFill="#726f6f">
+                           <font>
+                              <Font name="Cambria Italic" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" stylesheets="@../../../../java/values/style.css">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField prefHeight="40.0" prefWidth="223.0" promptText="Type here to search" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../../../../java/values/style.css" text="Search" textFill="WHITE" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+                  <VBox fx:id="choosenProductCard" alignment="CENTER" prefHeight="50.0" prefWidth="100.0" styleClass="chosen-card" stylesheets="@../../../../java/values/style.css">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="56.0" prefWidth="335.0">
+                           <children>
+                              <Label fx:id="productName" prefHeight="53.0" prefWidth="200.0" text="Peach" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="36.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="productPrice" prefHeight="53.0" prefWidth="162.0" text="\$5.69" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ImageView fx:id="productImageView" fitHeight="170.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@peach-removebg-preview.png" />
+                           </image></ImageView>
+                        <HBox alignment="CENTER" prefHeight="57.0" prefWidth="335.0">
+                           <children>
+                              <Label prefHeight="53.0" prefWidth="146.0" text="Kg" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="45.0" prefWidth="130.0" promptText="1" styleClass="kg-and-choose-box" stylesheets="@../../../../java/values/style.css" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Separator prefHeight="3.0" prefWidth="114.0" />
+                              <Label alignment="CENTER" prefHeight="45.0" prefWidth="52.0" text="or" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Separator prefHeight="3.0" prefWidth="114.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="57.0" prefWidth="335.0">
+                           <children>
+                              <Label prefHeight="53.0" prefWidth="146.0" text="Per" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="45.0" prefWidth="130.0" promptText="selected" styleClass="kg-and-choose-box" stylesheets="@../../../../java/values/style.css" />
+                           </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="270.0" styleClass="add-button" stylesheets="@../../../../java/values/style.css" text="ADD TO CART" textFill="#828282">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="53.0" prefWidth="94.0" text="language" textFill="#878787">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="53.0" prefWidth="69.0" text="English" textFill="#878787" underline="true">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="65.0" prefWidth="424.0" HBox.hgrow="ALWAYS" />
+                        <Label prefHeight="53.0" prefWidth="118.0" text="My Account" textFill="#878787">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@basket-icon-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="126.0" />
+                        <VBox prefHeight="100.0" prefWidth="377.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="382.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="360.0" styleClass="same-product" stylesheets="@../../../../java/values/style.css">
+                                       <children>
+                                          <Label prefHeight="63.0" prefWidth="136.0" text="Same products" textFill="#878787">
+                                             <font>
+                                                <Font name="Cambria Bold" size="18.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets top="-20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="21.0" prefWidth="51.0" text="Iphone" textFill="#878787">
+                                             <font>
+                                                <Font name="Cambria" size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets right="160.0" top="-5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="21.0" prefWidth="61.0" text="Samsung" textFill="#878787">
+                                             <font>
+                                                <Font name="Cambria" size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets right="150.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="21.0" prefWidth="58.0" text="Charger" textFill="#878787">
+                                             <font>
+                                                <Font name="Cambria" size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="5.0" top="-20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="21.0" prefWidth="51.0" text="Watch" textFill="#878787">
+                                             <font>
+                                                <Font name="Cambria" size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets top="-43.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="21.0" prefWidth="84.0" text="Headphones" textFill="#878787">
+                                             <font>
+                                                <Font name="Cambria" size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="189.0" top="-21.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefHeight="21.0" prefWidth="51.0" text="Laptop" textFill="#878787">
+                                             <font>
+                                                <Font name="Cambria" size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="155.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="100.0" prefWidth="126.0" />
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="415.0" styleClass="best-product" stylesheets="@../../../../java/values/style.css">
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="173.0" text="Top selling products" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="78.0" text="PlayStation" textFill="#e8e5e5">
+                                 <font>
+                                    <Font name="Cambria" size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets right="200.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="90.0" text="Smart watch" textFill="#e8e5e5">
+                                 <font>
+                                    <Font name="Cambria" size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-26.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="75.0" text="Powerbank" textFill="#e8e5e5">
+                                 <font>
+                                    <Font name="Cambria" size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets right="-180.0" top="-26.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="75.0" text="Iphone 11" textFill="#e8e5e5">
+                                 <font>
+                                    <Font name="Cambria" size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets right="200.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="88.0" text="Headphones" textFill="#e8e5e5">
+                                 <font>
+                                    <Font name="Cambria" size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="-30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="88.0" text="Hair dryer" textFill="#e8e5e5">
+                                 <font>
+                                    <Font name="Cambria" size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets right="-190.0" top="-29.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="100.0" prefWidth="126.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" prefHeight="570.0" prefWidth="785.0" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="10.0" prefWidth="25.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

@@ -5,6 +5,4 @@ module com.example.aliexpress_clone {
 
     opens com.example.aliexpress_clone to javafx.fxml;
     exports com.example.aliexpress_clone;
-    exports Controller;
-    opens Controller to javafx.fxml;
 }
