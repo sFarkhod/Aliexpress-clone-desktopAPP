@@ -13,11 +13,11 @@ public class Aliexpress extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Aliexpress.class.getResource("Aliexpress_main.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Aliexpress.class.getResource("Login.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         String css = this.getClass().getResource("style.css").toExternalForm();
         scene.getStylesheets().add(css);
-        stage.setTitle("Aliexpress-clone");
+        stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();
     }

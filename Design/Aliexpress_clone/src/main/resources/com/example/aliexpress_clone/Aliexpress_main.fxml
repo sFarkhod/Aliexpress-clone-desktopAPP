@@ -27,7 +27,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="110.0" prefWidth="200.0">
                      <children>
-                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="175.0" text="Aliexpress" textFill="#2f2d2d">
+                        <Label fx:id="aliexpressiis" alignment="CENTER" prefHeight="38.0" prefWidth="175.0" text="Aliexpress" textFill="#2f2d2d">
                            <font>
                               <Font name="Cambria Bold" size="30.0" />
                            </font>
@@ -44,7 +44,7 @@
                         <Insets bottom="20.0" left="30.0" right="30.0" />
                      </VBox.margin>
                      <children>
-                        <TextField prefHeight="40.0" prefWidth="223.0" promptText="Type here to search" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
+                        <TextField fx:id="searchTf" prefHeight="40.0" prefWidth="223.0" promptText="Type here to search" styleClass="transparent" stylesheets="@../../../../java/values/style.css">
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
@@ -52,7 +52,7 @@
                               <Font name="Cambria" size="18.0" />
                            </font>
                         </TextField>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../../../../java/values/style.css" text="Search" textFill="WHITE" />
+                        <Button mnemonicParsing="false" onAction="#searchProduct" prefHeight="40.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../../../../java/values/style.css" text="Search" textFill="WHITE" />
                      </children>
                      <styleClass>
                         <String fx:value="search-box" />
@@ -125,7 +125,7 @@
                               <ComboBox prefHeight="45.0" prefWidth="130.0" promptText="selected" styleClass="kg-and-choose-box" stylesheets="@../../../../java/values/style.css" />
                            </children>
                         </HBox>
-                        <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="270.0" styleClass="add-button" stylesheets="@../../../../java/values/style.css" text="ADD TO CART" textFill="#828282">
+                        <Button mnemonicParsing="false" onAction="#setNewData" prefHeight="70.0" prefWidth="270.0" styleClass="add-button" stylesheets="@../../../../java/values/style.css" text="ADD TO CART" textFill="#828282">
                            <VBox.margin>
                               <Insets bottom="20.0" top="30.0" />
                            </VBox.margin>
@@ -157,12 +157,12 @@
                            </font>
                         </Label>
                         <Pane prefHeight="65.0" prefWidth="424.0" HBox.hgrow="ALWAYS" />
-                        <Label prefHeight="53.0" prefWidth="118.0" text="My Account" textFill="#878787">
+                        <Label onMouseClicked="#myAccountGo" prefHeight="53.0" prefWidth="118.0" text="My Account" textFill="#878787">
                            <font>
                               <Font name="Cambria Bold" size="18.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="cart" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#cartSystem" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@basket-icon-removebg-preview.png" />
                            </image>
@@ -186,7 +186,7 @@
                                                 <Insets top="-20.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label prefHeight="21.0" prefWidth="51.0" text="Iphone" textFill="#878787">
+                                          <Label onMouseClicked="#labelGoTo" prefHeight="21.0" prefWidth="51.0" text="Iphone" textFill="#878787">
                                              <font>
                                                 <Font name="Cambria" size="15.0" />
                                              </font>
@@ -194,7 +194,7 @@
                                                 <Insets right="160.0" top="-5.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label prefHeight="21.0" prefWidth="61.0" text="Samsung" textFill="#878787">
+                                          <Label onMouseClicked="#labelGoTo" prefHeight="21.0" prefWidth="61.0" text="Samsung" textFill="#878787">
                                              <font>
                                                 <Font name="Cambria" size="15.0" />
                                              </font>
@@ -202,7 +202,7 @@
                                                 <Insets right="150.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label prefHeight="21.0" prefWidth="58.0" text="Charger" textFill="#878787">
+                                          <Label onMouseClicked="#labelGoTo" prefHeight="21.0" prefWidth="58.0" text="Charger" textFill="#878787">
                                              <font>
                                                 <Font name="Cambria" size="15.0" />
                                              </font>
@@ -210,7 +210,7 @@
                                                 <Insets left="5.0" top="-20.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label prefHeight="21.0" prefWidth="51.0" text="Watch" textFill="#878787">
+                                          <Label onMouseClicked="#labelGoTo" prefHeight="21.0" prefWidth="51.0" text="Watch" textFill="#878787">
                                              <font>
                                                 <Font name="Cambria" size="15.0" />
                                              </font>
@@ -218,7 +218,7 @@
                                                 <Insets top="-43.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label prefHeight="21.0" prefWidth="84.0" text="Headphones" textFill="#878787">
+                                          <Label onMouseClicked="#labelGoTo" prefHeight="21.0" prefWidth="84.0" text="Headphones" textFill="#878787">
                                              <font>
                                                 <Font name="Cambria" size="15.0" />
                                              </font>
@@ -226,7 +226,7 @@
                                                 <Insets left="189.0" top="-21.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label prefHeight="21.0" prefWidth="51.0" text="Laptop" textFill="#878787">
+                                          <Label onMouseClicked="#labelGoTo" prefHeight="21.0" prefWidth="51.0" text="Laptop" textFill="#878787">
                                              <font>
                                                 <Font name="Cambria" size="15.0" />
                                              </font>
@@ -251,7 +251,7 @@
                                     <Insets top="-3.0" />
                                  </VBox.margin>
                               </Label>
-                              <Label prefHeight="29.0" prefWidth="78.0" text="PlayStation" textFill="#e8e5e5">
+                              <Label onMouseClicked="#labelGoTo" prefHeight="29.0" prefWidth="78.0" text="PlayStation" textFill="#e8e5e5">
                                  <font>
                                     <Font name="Cambria" size="15.0" />
                                  </font>
@@ -259,7 +259,7 @@
                                     <Insets right="200.0" />
                                  </VBox.margin>
                               </Label>
-                              <Label prefHeight="23.0" prefWidth="90.0" text="Smart watch" textFill="#e8e5e5">
+                              <Label onMouseClicked="#labelGoTo" prefHeight="23.0" prefWidth="90.0" text="Smart watch" textFill="#e8e5e5">
                                  <font>
                                     <Font name="Cambria" size="15.0" />
                                  </font>
@@ -267,7 +267,7 @@
                                     <Insets top="-26.0" />
                                  </VBox.margin>
                               </Label>
-                              <Label prefHeight="29.0" prefWidth="75.0" text="Powerbank" textFill="#e8e5e5">
+                              <Label onMouseClicked="#labelGoTo" prefHeight="29.0" prefWidth="75.0" text="Powerbank" textFill="#e8e5e5">
                                  <font>
                                     <Font name="Cambria" size="15.0" />
                                  </font>
@@ -275,7 +275,7 @@
                                     <Insets right="-180.0" top="-26.0" />
                                  </VBox.margin>
                               </Label>
-                              <Label prefHeight="29.0" prefWidth="75.0" text="Iphone 11" textFill="#e8e5e5">
+                              <Label onMouseClicked="#labelGoTo" prefHeight="29.0" prefWidth="75.0" text="Iphone 11" textFill="#e8e5e5">
                                  <font>
                                     <Font name="Cambria" size="15.0" />
                                  </font>
@@ -283,7 +283,7 @@
                                     <Insets right="200.0" />
                                  </VBox.margin>
                               </Label>
-                              <Label prefHeight="29.0" prefWidth="88.0" text="Headphones" textFill="#e8e5e5">
+                              <Label onMouseClicked="#labelGoTo" prefHeight="29.0" prefWidth="88.0" text="Headphones" textFill="#e8e5e5">
                                  <font>
                                     <Font name="Cambria" size="15.0" />
                                  </font>
@@ -291,7 +291,7 @@
                                     <Insets top="-30.0" />
                                  </VBox.margin>
                               </Label>
-                              <Label prefHeight="29.0" prefWidth="88.0" text="Hair dryer" textFill="#e8e5e5">
+                              <Label onMouseClicked="#labelGoTo" prefHeight="29.0" prefWidth="88.0" text="Hair dryer" textFill="#e8e5e5">
                                  <font>
                                     <Font name="Cambria" size="15.0" />
                                  </font>

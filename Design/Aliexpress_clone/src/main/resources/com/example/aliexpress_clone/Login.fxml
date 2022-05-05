@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="LoginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" stylesheets="@../../../../../../../../../OneClickAway-E-Commerce/src/sample/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+<AnchorPane fx:id="LoginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aliexpress_clone.LogedInController">
    <children>
       <AnchorPane fx:id="pane3" layoutX="-3.0" layoutY="-1.0" prefHeight="526.0" prefWidth="388.0" styleClass="right-bar" stylesheets="@../../../../java/values/style.css">
          <children>
@@ -37,25 +37,25 @@
          </children></AnchorPane>
       <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="409.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../OneClickAway-E-Commerce/src/sample/icon1.png" />
+            <Image url="@icon1.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="409.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../OneClickAway-E-Commerce/src/sample/lock.png" />
+            <Image url="@lock.png" />
          </image>
       </ImageView>
-      <TextField fx:id="UsernameTF" layoutX="475.0" layoutY="138.0" prefHeight="26.0" prefWidth="215.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black;">
+      <TextField fx:id="tf_username" layoutX="475.0" layoutY="138.0" prefHeight="26.0" prefWidth="215.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black;">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="PasswordTF" layoutX="475.0" layoutY="192.0" prefHeight="26.0" prefWidth="215.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black;">
+      <PasswordField fx:id="tf_password" layoutX="475.0" layoutY="192.0" prefHeight="26.0" prefWidth="215.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black;">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font>
       </PasswordField>
-      <Button fx:id="LoginButton" layoutX="528.0" layoutY="273.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: transparent;" text="Login" textAlignment="CENTER" textFill="#7b6a46" AnchorPane.bottomAnchor="208.0" AnchorPane.leftAnchor="528.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="273.0">
+      <Button fx:id="LoginButton" layoutX="528.0" layoutY="273.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: transparent;" stylesheets="@style.css" text="Login" textAlignment="CENTER" textFill="#7b6a46" AnchorPane.bottomAnchor="208.0" AnchorPane.leftAnchor="528.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="273.0">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font>
@@ -63,7 +63,7 @@
             <String fx:value="Button" />
             <String fx:value="LoginButton" />
          </styleClass></Button>
-      <Button fx:id="SignupButton" layoutX="527.0" layoutY="401.0" mnemonicParsing="false" onAction="#SignupButtonOnAction" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: transparent;" text="Signup" textAlignment="CENTER" textFill="#7b6a46" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="527.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="401.0">
+      <Button layoutX="527.0" layoutY="401.0" mnemonicParsing="false" onAction="#gotoSignUp" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: transparent;" stylesheets="@style.css" text="Signup" textAlignment="CENTER" textFill="#7b6a46" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="527.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="401.0">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font>
@@ -71,7 +71,7 @@
             <String fx:value="Button" />
             <String fx:value="SignupButton" />
          </styleClass></Button>
-      <Button fx:id="CancelButton" layoutX="664.0" layoutY="468.0" mnemonicParsing="false" onAction="#CancelButtonOnAction" style="-fx-background-color: transparent;" styleClass="CancelButton" text="CANCEL" textFill="#7b6a46" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="664.0" AnchorPane.rightAnchor="14.799999999999997" AnchorPane.topAnchor="468.0">
+      <Button fx:id="CancelButton" layoutX="664.0" layoutY="468.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" style="-fx-background-color: transparent;" styleClass="CancelButton" stylesheets="@style.css" text="CANCEL" textFill="#7b6a46" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="664.0" AnchorPane.rightAnchor="14.799999999999997" AnchorPane.topAnchor="468.0">
          <font>
             <Font name="Goudy Old Style" size="14.0" />
          </font></Button>
@@ -85,7 +85,7 @@
             <Font name="Goudy Old Style" size="14.0" />
          </font>
       </Text>
-      <Label fx:id="LoginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="435.0" layoutY="246.0" prefHeight="27.0" prefWidth="277.0" textAlignment="CENTER" textFill="#bf2727">
+      <Label fx:id="loginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="435.0" layoutY="246.0" prefHeight="27.0" prefWidth="277.0" textAlignment="CENTER" textFill="#bf2727">
          <font>
             <Font name="Goudy Old Style" size="14.0" />
          </font>

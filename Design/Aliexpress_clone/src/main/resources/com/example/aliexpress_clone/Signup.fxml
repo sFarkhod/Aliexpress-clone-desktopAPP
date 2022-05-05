@@ -10,9 +10,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="SignupPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="904.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignupController">
+<AnchorPane fx:id="SignupPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="904.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aliexpress_clone.SignUpController">
    <children>
-      <Pane prefHeight="604.0" prefWidth="404.0" style="-fx-border-color: #7b6a46; -fx-border-radius: 6;" stylesheets="@../../../../java/values/style.css">
+      <Pane prefHeight="604.0" prefWidth="404.0" stylesheets="@../../../../java/values/style.css">
          <styleClass>
             <String fx:value="signUpImage" />
             <String fx:value="right-bar" />
@@ -60,44 +60,44 @@
             <Font name="Goudy Old Style" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="firstnameTF" layoutX="588.0" layoutY="177.0" prefHeight="26.0" prefWidth="265.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+      <TextField fx:id="tf_firstname" layoutX="588.0" layoutY="177.0" prefHeight="26.0" prefWidth="265.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font></TextField>
-      <TextField fx:id="lastnameTF" layoutX="587.0" layoutY="227.0" prefHeight="26.0" prefWidth="265.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+      <TextField fx:id="tf_lastname" layoutX="587.0" layoutY="227.0" prefHeight="26.0" prefWidth="265.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font></TextField>
-      <TextField fx:id="usernameTF" layoutX="587.0" layoutY="280.0" prefHeight="26.0" prefWidth="265.0" promptText="Username " style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+      <TextField fx:id="tf_username" layoutX="587.0" layoutY="280.0" prefHeight="26.0" prefWidth="265.0" promptText="Username " style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font></TextField>
-      <PasswordField fx:id="passwordTF" layoutX="588.0" layoutY="339.0" prefHeight="26.0" prefWidth="266.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+      <PasswordField fx:id="tf_password" layoutX="588.0" layoutY="339.0" prefHeight="26.0" prefWidth="266.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font></PasswordField>
-      <PasswordField fx:id="confirmPassTF" layoutX="588.0" layoutY="393.0" prefHeight="26.0" prefWidth="266.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
+      <PasswordField fx:id="tf_confirmpass" layoutX="588.0" layoutY="393.0" prefHeight="26.0" prefWidth="266.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cf967a;">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font></PasswordField>
-      <Button fx:id="signupFrameButton" layoutX="628.0" layoutY="475.0" mnemonicParsing="false" onAction="#signupFrameButtonOnAction" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: transparent;" styleClass="SignUp" text="Sign up" textFill="#cf967a">
+      <Button fx:id="signupFrameButton" layoutX="628.0" layoutY="475.0" mnemonicParsing="false" onAction="#mainsignButton" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: transparent;" styleClass="SignUp" stylesheets="@style.css" text="Sign up" textFill="#cf967a">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="GobackButton" layoutX="815.0" layoutY="554.0" mnemonicParsing="false" onAction="#GobackButtonOnAction" style="-fx-background-color: transparent;" styleClass="Cancel" text="Cancel" textFill="#cf967a">
+      <Button fx:id="GobackButton" layoutX="815.0" layoutY="554.0" mnemonicParsing="false" onAction="#goBackCancel" style="-fx-background-color: transparent;" styleClass="Cancel" stylesheets="@style.css" text="Cancel" textFill="#cf967a">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font>
       </Button>
-      <Label fx:id="passwordMatchLabel" layoutX="605.0" layoutY="436.0" prefHeight="18.0" prefWidth="138.0" textFill="RED" />
+      <Label fx:id="passwordMatchLabel" layoutX="605.0" layoutY="436.0" prefHeight="18.0" prefWidth="166.0" textFill="RED" />
       <Label fx:id="signupmessageLabel" layoutX="574.0" layoutY="106.0" prefHeight="18.0" prefWidth="197.0" textFill="#2bcf49" />
       <Text layoutX="14.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font name="Goudy Old Style" size="18.0" />
          </font>
       </Text>
-      <Label fx:id="passwordLabel" layoutX="639.0" layoutY="454.0" prefHeight="18.0" prefWidth="66.0" textFill="#40d16e" />
+      <Label fx:id="passwordLabel" layoutX="604.0" layoutY="454.0" prefHeight="18.0" prefWidth="166.0" textFill="#40d16e" />
       <Label layoutX="507.0" text="SIGN UP" textFill="#6f3e3e">
          <font>
             <Font name="High Tower Text" size="70.0" />

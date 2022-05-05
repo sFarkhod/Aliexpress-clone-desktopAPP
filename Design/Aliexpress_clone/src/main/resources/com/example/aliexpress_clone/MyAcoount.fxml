@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="604.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aliexpress_clone.MyAcoount">
+<AnchorPane prefHeight="604.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="713.0" layoutY="200.0" text="Last name" textFill="#6f3e3e">
          <font>
@@ -37,7 +37,7 @@
       </Pane>
       <ImageView fitHeight="150.0" fitWidth="169.0" layoutX="358.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../java/values/bill-gates-wealthiest-person.jpg" />
+            <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/bill-gates-wealthiest-person.jpg" />
          </image>
       </ImageView>
       <Label layoutX="594.0" layoutY="53.0" prefHeight="44.0" prefWidth="169.0" text="Billing Address" textFill="#6f3e3e">
@@ -90,31 +90,31 @@
       <Button layoutX="342.0" layoutY="268.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="154.0" text="Account" />
       <ImageView fitHeight="30.0" fitWidth="49.0" layoutX="351.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../java/values/icons8-person-30.png" />
+            <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/icons8-person-30.png" />
          </image>
       </ImageView>
       <Button layoutX="342.0" layoutY="314.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="154.0" text="        Change Password" />
       <ImageView fitHeight="30.0" fitWidth="49.0" layoutX="351.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../java/values/icons8-password-reset-30.png" />
+            <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/icons8-password-reset-30.png" />
          </image>
       </ImageView>
       <Button layoutX="342.0" layoutY="359.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="154.0" text="     Billing Address" textFill="#3d2497" />
       <ImageView fitHeight="30.0" fitWidth="49.0" layoutX="351.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../java/values/icons8-credit-card-64.png" />
+            <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/icons8-credit-card-64.png" />
          </image>
       </ImageView>
       <Button layoutX="342.0" layoutY="406.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="154.0" text="My Orders" />
       <ImageView fitHeight="30.0" fitWidth="49.0" layoutX="351.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../java/values/icons8-basket-30.png" />
+            <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/icons8-basket-30.png" />
          </image>
       </ImageView>
       <Button layoutX="342.0" layoutY="457.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="154.0" text="    Delete Account" />
       <ImageView fitHeight="25.0" fitWidth="49.0" layoutX="351.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../java/values/icons8-delete-24.png" />
+            <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/icons8-delete-24.png" />
          </image>
       </ImageView>
    </children>

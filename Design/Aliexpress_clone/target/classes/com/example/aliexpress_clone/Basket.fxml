@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="604.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aliexpress_clone.Basket">
+<AnchorPane prefHeight="604.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane prefHeight="604.0" prefWidth="323.0" styleClass="right-bar" stylesheets="@../../../../java/values/style.css" />
       <Label layoutX="37.0" layoutY="231.0" text="Aliexpress " textFill="#363333">
@@ -31,7 +30,7 @@
       </Label>
       <ImageView fitHeight="221.0" fitWidth="193.0" layoutX="354.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../java/values/COLMI-P8-Plus-1-69-2021.jpg_640x640.jpg" />
+            <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/COLMI-P8-Plus-1-69-2021.jpg_640x640.jpg" />
          </image>
       </ImageView>
       <HBox alignment="CENTER" layoutX="323.0" prefHeight="100.0" prefWidth="582.0" styleClass="basket-top" stylesheets="@../../../../java/values/style.css">
@@ -104,32 +103,32 @@
          <children>
             <ImageView fitHeight="78.0" fitWidth="72.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(1).jpg" />
+                  <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(1).jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="78.0" fitWidth="72.0" layoutX="91.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(2).jpg" />
+                  <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(2).jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="78.0" fitWidth="72.0" layoutX="177.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(3).jpg" />
+                  <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(3).jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="78.0" fitWidth="72.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(3).jpg" />
+                  <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(3).jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="78.0" fitWidth="72.0" layoutX="96.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(5).jpg" />
+                  <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(5).jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="78.0" fitWidth="72.0" layoutX="177.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(6).jpg" />
+                  <Image url="file:/C:/Users/Sohibov%20Farhod/Desktop/Aliexpress%20clone%20university%20project/Design/Aliexpress_clone/src/main/java/values/COLMI-P8-Plus-1-69-2021.jpg_50x50%20(6).jpg" />
                </image>
             </ImageView>
          </children>

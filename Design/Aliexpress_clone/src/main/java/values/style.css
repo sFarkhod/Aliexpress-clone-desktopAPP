@@ -72,3 +72,57 @@
 .for-adding-product {
 -fx-background-color: #125363;
 }
+
+
+
+
+
+.CancelButton:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+}
+.CancelButton:pressed{
+}
+
+.LoginButton:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+}
+.LoginButton:pressed{
+}
+
+.SignupButton:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+}
+
+.pane3{
+-fx-background-image:url('back2.jpg');
+-fx-background-size:cover;
+}
+.text-field{
+-fx-prompt-text-fill: #000000;
+}
+
+.SignUp:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+}
+
+.Cancel:hover{
+ -fx-border-radius:20;
+ -fx-border-color:#7b6a46;
+
+}
+.button:hover{
+-fx-border-radius:20;
+-fx-border-color:#000000;
+}
+
+.mouse-moved: hover{
+ -fx-background-color: #E4E4E4;
+}
+
+.shadow{
+ -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.2), 10, 0 , 0 , 10);
+}
